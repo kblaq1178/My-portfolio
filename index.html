@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend developer</p>
+                <h1>Hi, I'm Kehinde <br> Areo From Nigeria</h1>
+            </div>
+        </div>
+    </div>
+<!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="IMAGES/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+
+                    <p>Areo Kehinde Ebenezer is a Frontend Engineer and Graphics Designer, 
+                     With a passion for both technology and design, 
+                    he blends his engineering knowledge with his love for creating user-friendly, 
+                    visually appealing digital experiences. Kehinde strives to make complex systems easy to use, 
+                    focusing on both functionality and design to deliver great interfaces.
+
+                        Energetic and resourceful Web3 enthusiast, content creator, and certified tech professional 
+                        with hands-on experience in blockchain education, community engagement, and 
+                        ambassadorial roles. 
+                    </p>
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                        <div class="tab-links" onclick="opentab('education')">Education    </div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web development</span><br>Web app development</li>
+                            <li><span>Graphics Design</span><br>Designing eye-catching graphics</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>(2023 – Present)</span><br>Creator – Pody Network </li>
+                            <li><span>2024</span><br>Frontend development - HNG internship</li>
+                            <li><span>2021</span><br>Graphics Designer - TaikenGraphics</li>
+                            <li><span>2025- present</span><br>Ambassador - Cowryrise</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Software Development Course - Digital For all challenge</li>
+                            <li><span>2021</span><br>Graphics Design - Tundex computers, ogbomoso</li>
+                            <li><span>2024</span><br>Prompt Engineering - SQI college of ICT ogbomoso </li>
+                            <li><span>2024</span><br>Blockchain Fundamentals - Blockchain Innovation Hub </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i></i>
+                    <h2>Frontend development</h2>
+                    <p>I enjoy building the pieces of the web that users see and interact
+                        with, using Html, CSS, JavaScript and sometimes react.</p>
+                        <a href="#">learn more</a>
+                </div>
+
+                <div>
+                    <i></i>
+                    <h2>Ui/ux Design</h2>
+                    <p>I design intuitive, user-focused interfaces that make digital experience 
+                        simple and enjoyable
+                    </p>
+                        <a href="#">learn more</a>
+                </div>
+
+                <div>
+                    <i></i>
+                    <h2>Graphic Design</h2>
+                    <p>I love bringing ideas to life visually, wehther its a logo,
+                        Social media post or an entire brand identity.
+                    </p>
+                        <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+     </div>
+<!--------------- Portfolio ------------->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="IMAGES/IMG-20240518-WA0039(3).jpg" alt="">
+                    <div class="layer">
+                        <h3>Ui/Ux design</h3>
+                        <p>Ui/Ux design for aladmo technologies
+                        </p>
+                        <a href="#"></a>
+                    </div>
+               </div>
+
+                <div class="work">
+                    <img src="IMAGES/Screenshot_20250714-145652.png"">
+                    <div class="layer">
+                        <h3>Parking web App</h3>
+                        <p>Moder Parking Management app
+                        </p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                
+                <div class="work">
+                    <img src="IMAGES/Sign.png" alt="">
+                    <div class="layer">
+                        <h3>Flyer design</h3>
+                        <p>A design episode   educating people about Sign protocol
+                        </p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+
+                <a href="#" class="btn">See more</a>
+        </div>
+     </div>
+
+  <!-- -------------contact-------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-planer-plane"></i>kehinde.areo@tech-u.edu.ng</p>
+                <p><i class="fas fa-phone-square-alt"></i>+237046124962</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="Kehinde_AreoCV_045157.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Kehinde Areo</p>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove('active-link');
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab');
+            } 
+            event.currentTarget.classList.add('active-link')
+            document.getElementById(tabname).classList.add('active-tab')
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
